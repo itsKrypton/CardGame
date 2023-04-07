@@ -81,18 +81,18 @@ public class Game {
                     currentPlayer.removeCard(cardToPlay);
                     playedCard = true;
                 }
-
-                if(currentPlayer.getHand().isEmpty())
-                {
-                    System.out.println("Player " + (currentPlayerIndex + 1) + " has won!");
-                    gameEnded = true;
-                }
-
-                else
-                {
-                    currentPlayerIndex = (currentPlayerIndex + 1) % this.numberOfPlayers;
-                }
             }
+
+            if(currentPlayer.getHand().isEmpty())
+            {
+                System.out.println("Player " + (currentPlayerIndex + 1) + " has won!");
+                gameEnded = true;
+            }
+
+            else
+            currentPlayerIndex = (currentPlayerIndex + 1) % this.numberOfPlayers;
+
+            System.out.println();
         }
 
         in.close();
