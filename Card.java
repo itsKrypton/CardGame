@@ -46,7 +46,7 @@ public class Card {
 
     public ActionType getActionType() 
     {
-        return this.getActionType();
+        return this.actionType;
     }
 
     @Override
