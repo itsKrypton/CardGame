@@ -1,5 +1,4 @@
-public enum Suit
-{
+public enum Suit {
     CLUBS,
     DIAMONDS,
     SPADES,
